@@ -1,6 +1,6 @@
 {
   "name": "@nagoos/vue-bottom-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "A component for keeping an input fixed to the bottom of a browser (including safari on ios)",
   "repository": {
