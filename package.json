@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": false,
   "description": "A component for keeping an input fixed to the bottom of a browser (including safari on ios)",
-  "main": ".eslintrc.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wallslide/vue-bottom-bar.git"
@@ -14,9 +13,14 @@
     "url": "https://github.com/wallslide/vue-bottom-bar/issues"
   },
   "homepage": "https://github.com/wallslide/vue-bottom-bar#readme",
+  "main": "./dist/vue-bottom-bar.common",
+  "unpkg": "./dist/vue-bottom-bar.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-bottom-bar ./src/components/BottomBar.vue",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
